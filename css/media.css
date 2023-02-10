@@ -1,0 +1,46 @@
+/* 1400이하 */
+@media screen and (max-width: 1400px) {
+    #language { }
+    #language dd { width: inherit; height: inherit; 
+                    background: transparent; box-shadow: 0;}
+    #language dd:first-of-type { box-shadow:  0 0 transparent; }
+    #language dd:nth-of-type(1)::before { display: none;}
+    .goFranchise { width: inherit; height: inherit; background: none; 
+    box-shadow:  0 0 transparent; text-indent: 0;}
+    #quickMenu{display: none;}
+    .goFranchise:hover {background: none; filter: none; box-shadow: none; }
+    #coupon{background: url(../images/bg_mobile_pattern.gif);}
+    #coupon a{transform: translate(0);}
+    #coupon a p{text-align: center;}
+}
+/* 1150 이하 */
+@media screen and (max-width: 1150px) {
+    #header {align-items: center;}
+    #header .logo {position: static;}
+    #gnb{display: none;}
+    main > section { height: auto; min-height: auto;
+                     padding: 50px 0;}
+    #event {height: 100vh;}
+    #store { padding: 0; }
+    #store > section { height: auto; padding: 100px 0;}
+    #coupon{ height: auto;}
+}
+
+/* 1050 이하 */
+@media screen and (max-width: 1050px) {
+    #event { 
+        background: url(../images/bg_event.png) no-repeat center 100px / 600px,
+        linear-gradient(45deg, rgba(247,238,219,1) 0%, rgba(255,190,190,1) 100%);
+
+    }
+    #event dl{ transform: translateX(0) translateY(130px);}
+    #menu{ background: rgba(247,238,219);}
+    .menuInner{transform: translateX(0);}
+    #communityList {flex-wrap: wrap;}
+    #communityList li{width: 32%; margin-bottom: 10px;}
+}
+/* 850 이하 */
+@media screen and (max-width: 850px) {
+    #store { }
+    #store > section { }
+}
