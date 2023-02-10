@@ -139,7 +139,7 @@ section h2, section h3 {text-transform: uppercase;}
 /* store 공통 */
 #store > section { 
         width: 50%; height: 100vh;
-        display:flex; width: 60%; 
+        display:flex;  
         justify-content: center;
         align-items: center;
 }

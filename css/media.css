@@ -20,7 +20,7 @@
     #gnb{display: none;}
     main > section { height: auto; min-height: auto;
                      padding: 50px 0;}
-    #event {height: 100vh;}
+    #event {height: 700px;}
     #store { padding: 0; }
     #store > section { height: auto; padding: 100px 0;}
     #coupon{ height: auto;}
@@ -29,9 +29,8 @@
 /* 1050 이하 */
 @media screen and (max-width: 1050px) {
     #event { 
-        background: url(../images/bg_event.png) no-repeat center 100px / 600px,
+        background: url(../images/bg_event.png) no-repeat center 100px / 500px,
         linear-gradient(45deg, rgba(247,238,219,1) 0%, rgba(255,190,190,1) 100%);
-
     }
     #event dl{ transform: translateX(0) translateY(130px);}
     #menu{ background: rgba(247,238,219);}
@@ -41,6 +40,67 @@
 }
 /* 850 이하 */
 @media screen and (max-width: 850px) {
-    #store { }
-    #store > section { }
+    #event { 
+        background: url(../images/bg_event.png) no-repeat center 100px / 400px,
+        linear-gradient(45deg, rgba(247,238,219,1) 0%, rgba(255,190,190,1) 100%);
+    }
+    #store { flex-direction: column; }
+    /* #store { flex-wrap: wrap; } */
+    #store > section { width: 100%; }
+}
+/* 600 이하 */
+@media screen and (max-width:600px) {
+    #language{ 
+        margin: 13px 5px 0 0;
+}
+#language dd{ 
+    width: 50px; height: 50px;
+     color: #000;
+     font-size: 10px;
+}
+.goFranchise { 
+width: 50px;
+font-size: 10px;
+    }
+}
+/* 510 이하 */
+@media screen and (max-width: 510px) {
+
+    #event dl dd:first-of-type{
+        font-size: 20px;
+    }
+    #event dl dt{
+        font-size: 80px;
+    }
+    .goLink{ 
+        width: 370px;
+        font: 15px / 67px 'GmarketSansMedium';
+    }
+
+    main h3{
+        font-size: 15px; 
+    }
+main p{
+    font-size: 50px;
+}
+/* 
+    #store h3{
+        font-size: 15px;
+    }
+    #store p{
+        font-size: 50px;
+    } */
+
+
+
+ .storeName{
+    width: 370px;
+    font: 15px / 67px 'GmarketSansMedium';
+ }
+ .storeName::placeholder{ 
+    font: 15px / 67px 'GmarketSansMedium';
+ }
+ .searchBtn{
+    left: 320px;
+ }
 }
